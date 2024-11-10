@@ -1,8 +1,12 @@
 local M = {}
 
+
+
+print("call")
 function M.setup()
-	vim.api.nvim_create_user_command("helloworl", function()
-		print("hello world")
+	print("setup")
+	vim.api.nvim_create_user_command("HelloWorld", function()
+		print("")
 	end, {})
 end
 
